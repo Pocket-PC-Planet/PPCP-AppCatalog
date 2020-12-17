@@ -10,4 +10,5 @@ A lite alternative to the PPCP-AppManager program designed for older, less power
 - [Discord Server](https://discord.gg/tHbx4qc)
 - [PPC Planet](https://ppcplanet.org/)
 
+
 ![Project Banner](https://i.imgur.com/jgTiswg.png)
