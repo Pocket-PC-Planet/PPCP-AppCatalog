@@ -38,6 +38,7 @@ namespace PPCPAC
         {
             //go home
             tabControl.SelectedIndex = 0;
+            homeBtn.Text = "Home";
 
             //remember screenshots setting
             string value = new RegStoreClass().sValue;
@@ -48,45 +49,54 @@ namespace PPCPAC
         private void searchBtn_Click(object sender, EventArgs e)
         {
             //when search button is pressed
-            tabControl.SelectedIndex = 0;
-            string query = "";
-            string category = "";
-
-            //get screenshot string
-            string screenshots = new RegStoreClass().sValue;
-
-            //get screenshot preference
-
-            //get query
-            if (searchTxt.Text.Trim() != "")
+            if (searchTxt.Text.Trim() != "" || categoryBox.SelectedIndex != 0)
             {
-                query = searchTxt.Text;
-            }
+                tabControl.SelectedIndex = 0;
+                homeBtn.Text = "End Search";
 
-            //get selected category
-            switch (categoryBox.SelectedIndex)
+                string query = "";
+                string category = "";
+
+                //get screenshot string
+                string screenshots = new RegStoreClass().sValue;
+
+                //get screenshot preference
+
+                //get query
+                if (searchTxt.Text.Trim() != "")
+                {
+                    query = searchTxt.Text;
+                }
+
+                //get selected category
+                switch (categoryBox.SelectedIndex)
+                {
+                    case 1:
+                        {
+                            category = "app";
+                        }
+                        break;
+
+                    case 2:
+                        {
+                            category = "game";
+                        }
+                        break;
+
+                    case 3:
+                        {
+                            category = "driver";
+                        }
+                        break;
+                }
+
+                //search
+                browser.Navigate(new Uri("http://appmanager.ppcplanet.org/posts.php?q=" + query + "^^" + category + screenshots));
+            }
+            else
             {
-                case 1:
-                {
-                    category = "app";
-                }
-                break;
-
-                case 2:
-                {
-                    category = "game";
-                }
-                break;
-
-                case 3:
-                {
-                    category = "driver";
-                }
-                break;
+                MessageBox.Show("Invalid search query.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Hand, MessageBoxDefaultButton.Button1);
             }
-
-            //search
-            browser.Navigate(new Uri("http://appmanager.ppcplanet.org/posts.php?q=" + query + "^^" + category + screenshots));
         }
 
         private void tabControl_SelectedIndexChanged(object sender, EventArgs e)
