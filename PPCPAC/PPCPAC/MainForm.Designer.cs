@@ -32,7 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.mainMenu1 = new System.Windows.Forms.MainMenu();
             this.homeBtn = new System.Windows.Forms.MenuItem();
-            this.menuItem2 = new System.Windows.Forms.MenuItem();
+            this.menuBtn = new System.Windows.Forms.MenuItem();
             this.scToggle = new System.Windows.Forms.MenuItem();
             this.infoBtn = new System.Windows.Forms.MenuItem();
             this.exitBtn = new System.Windows.Forms.MenuItem();
@@ -72,19 +72,19 @@
             // mainMenu1
             // 
             this.mainMenu1.MenuItems.Add(this.homeBtn);
-            this.mainMenu1.MenuItems.Add(this.menuItem2);
+            this.mainMenu1.MenuItems.Add(this.menuBtn);
             // 
             // homeBtn
             // 
             this.homeBtn.Text = "Home";
             this.homeBtn.Click += new System.EventHandler(this.homeBtn_Click);
             // 
-            // menuItem2
+            // menuBtn
             // 
-            this.menuItem2.MenuItems.Add(this.scToggle);
-            this.menuItem2.MenuItems.Add(this.infoBtn);
-            this.menuItem2.MenuItems.Add(this.exitBtn);
-            this.menuItem2.Text = "App";
+            this.menuBtn.MenuItems.Add(this.scToggle);
+            this.menuBtn.MenuItems.Add(this.infoBtn);
+            this.menuBtn.MenuItems.Add(this.exitBtn);
+            this.menuBtn.Text = "App";
             // 
             // scToggle
             // 
@@ -167,7 +167,7 @@
             // 
             this.searchBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(212)))), ((int)(((byte)(78)))));
             this.searchBtn.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold);
-            this.searchBtn.Location = new System.Drawing.Point(8, 197);
+            this.searchBtn.Location = new System.Drawing.Point(8, 182);
             this.searchBtn.Name = "searchBtn";
             this.searchBtn.Size = new System.Drawing.Size(70, 22);
             this.searchBtn.TabIndex = 6;
@@ -249,7 +249,7 @@
             this.label9.Location = new System.Drawing.Point(7, 205);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(233, 62);
-            this.label9.Text = "Prerelease v0.1.0\r\ngithub.com/pocket-pc-planet\r\nppcplanet.org";
+            this.label9.Text = "Version 0.1.1\r\ngithub.com/pocket-pc-planet\r\nppcplanet.org";
             // 
             // label5
             // 
@@ -354,7 +354,7 @@
         #endregion
 
         private System.Windows.Forms.MenuItem homeBtn;
-        private System.Windows.Forms.MenuItem menuItem2;
+        private System.Windows.Forms.MenuItem menuBtn;
         private System.Windows.Forms.MenuItem scToggle;
         private System.Windows.Forms.MenuItem infoBtn;
         private System.Windows.Forms.TabControl tabControl;
