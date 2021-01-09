@@ -1,7 +1,10 @@
 # PPCP-AppCatalog (PPCP-AppManager)
 ![Catalog Logo](icon.png)
 
-A lite alternative to the PPCP-AppManager program designed for older, less powerful devices.
+A lite alternative to the PPCP-AppManager program designed for older, less powerful devices. With PPCPAC, you can easily download and install Windows Mobile apps, right on your Pocket PC!
+
+### Screenshot
+![Catalog](Screenshots/catalog.PNG)
 
 ### Resources
 - [PPCP-AppManager Website](http://appmanager.ppcplanet.org/)
