@@ -60,6 +60,7 @@
             this.browser = new System.Windows.Forms.WebBrowser();
             this.label10 = new System.Windows.Forms.Label();
             this.closeBtn = new System.Windows.Forms.Button();
+            this.searchMenuBtn = new System.Windows.Forms.MenuItem();
             this.tabControl.SuspendLayout();
             this.catalogPage.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -82,6 +83,7 @@
             // menuBtn
             // 
             this.menuBtn.MenuItems.Add(this.scToggle);
+            this.menuBtn.MenuItems.Add(this.searchMenuBtn);
             this.menuBtn.MenuItems.Add(this.infoBtn);
             this.menuBtn.MenuItems.Add(this.exitBtn);
             this.menuBtn.Text = "App";
@@ -122,7 +124,7 @@
             this.catalogPage.Controls.Add(this.label6);
             this.catalogPage.Location = new System.Drawing.Point(0, 0);
             this.catalogPage.Name = "catalogPage";
-            this.catalogPage.Size = new System.Drawing.Size(240, 267);
+            this.catalogPage.Size = new System.Drawing.Size(240, 271);
             this.catalogPage.Text = "Catalog";
             // 
             // panel3
@@ -160,7 +162,7 @@
             this.searchTab.Controls.Add(this.panel1);
             this.searchTab.Location = new System.Drawing.Point(0, 0);
             this.searchTab.Name = "searchTab";
-            this.searchTab.Size = new System.Drawing.Size(240, 267);
+            this.searchTab.Size = new System.Drawing.Size(240, 271);
             this.searchTab.Text = "Search";
             // 
             // searchBtn
@@ -192,7 +194,7 @@
             this.categoryBox.Items.Add("driver");
             this.categoryBox.Location = new System.Drawing.Point(8, 133);
             this.categoryBox.Name = "categoryBox";
-            this.categoryBox.Size = new System.Drawing.Size(225, 26);
+            this.categoryBox.Size = new System.Drawing.Size(225, 22);
             this.categoryBox.TabIndex = 3;
             // 
             // searchTxt
@@ -202,7 +204,7 @@
             this.searchTxt.ForeColor = System.Drawing.Color.Black;
             this.searchTxt.Location = new System.Drawing.Point(8, 69);
             this.searchTxt.Name = "searchTxt";
-            this.searchTxt.Size = new System.Drawing.Size(225, 25);
+            this.searchTxt.Size = new System.Drawing.Size(225, 21);
             this.searchTxt.TabIndex = 2;
             // 
             // label3
@@ -240,7 +242,7 @@
             this.Info.Controls.Add(this.panel2);
             this.Info.Location = new System.Drawing.Point(0, 0);
             this.Info.Name = "Info";
-            this.Info.Size = new System.Drawing.Size(240, 267);
+            this.Info.Size = new System.Drawing.Size(240, 271);
             this.Info.Text = "Info";
             // 
             // label9
@@ -249,7 +251,7 @@
             this.label9.Location = new System.Drawing.Point(7, 205);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(233, 62);
-            this.label9.Text = "Version 0.1.1\r\ngithub.com/pocket-pc-planet\r\nppcplanet.org";
+            this.label9.Text = "Version 1.0.0\r\ngithub.com/pocket-pc-planet\r\nppcplanet.org";
             // 
             // label5
             // 
@@ -324,6 +326,11 @@
             this.closeBtn.Text = "Exit";
             this.closeBtn.Click += new System.EventHandler(this.exitBtn_Click);
             // 
+            // searchMenuBtn
+            // 
+            this.searchMenuBtn.Text = "Search";
+            this.searchMenuBtn.Click += new System.EventHandler(this.searchMenuBtn_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -382,6 +389,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button closeBtn;
+        private System.Windows.Forms.MenuItem searchMenuBtn;
     }
 }
 
