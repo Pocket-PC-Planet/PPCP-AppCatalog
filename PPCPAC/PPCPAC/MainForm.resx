@@ -123,16 +123,24 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAASdAAA
-        EnQB3mYfeAAAAZJJREFUeF7tm7Ftw0AMRZU5hCwQpE/pQouozggZIVukyS6eQqXHYEIkQmzBwsc/y4Ad
-        vgPY0cTxH/XJ+zg/dF0X31Z6JQCV7Sf5auvo0AHgpAIu/RyWlXSr8VYr4FY3PAO71f4kANMwhGNzwLUK
-        +JyGcEzFG16ncGwZDwD+Ot8pCc7IOKefvurEnNNPXxXPOf30pQJ+T/wMl1ABZ9sgnwBdgDbIHODwgGpb
-        tEEmwTsbhVsvHdwGFwi0Aqk4pTWunASrKEMoQmu3QSqgCAJSELmUZLaWsLaOBwBKEXp/+gjHVNs6vO3C
-        MRVvd9iHY7Yi5CSfvmrDTvLpq+I5yacvALiSGBUAB0CCdAGHBxRr0wWYAxiEmAQdHlCccvVJkNtg48ux
-        uxdFi+ghx88CeSXGO8EkvGoLSUxJYuXbYP84hmNqcOnH53BMxRv7l3DMlsSc5NNXbdhJPn1VPCf59AUA
-        VxOkAuAASJAu4PCAYm26AHMAgxCToMMDilOuPgmWvwyVBaCKMMI7waUg0lry/+B3pf85Hl97JlQcui+6
-        DgAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAABJ0AAASdAHeZh94AAADhklE
+        QVR4Xu2QwWkdQRBElYdwAsZ3H3X4iejsEByCs/DFuTgKHRWG3GBqGBVvq+m97hY82O4eHtQ+VT4uDi6v
+        xP+Pq+X+AUc/YDucwkNvJnjozQRl2x0eTuGhNxM89GaCsu348PZ4jHCPov2ft8eIzvf48TbCfZoLPlDJ
+        hHsU7alkovNRyYT7NBd8oJIJ9yjaU8lE56OSCfdpLvhAJRPuUbSnkonORyUT7tNc8IFKJtyjaE8lE52P
+        Sibcp7ngA5VMuEfRnkomOh+VTLhPc8EHKplwj6I9lUx0PiqZcJ/mgg9UMuEeRXsqmeh8VDLhPs0FH6hk
+        wj2K9lQy0fmoZMJ9mgs+UMmEexTtqWSi81HJhPs0F3ygkgn3KNpTyUTno5IJ92ku+EAlE+5RtKeSic5H
+        JRPu01wcHk7hoTcTPPRmgrLtDg+n8NCbCR56M0HZdp8PV8n9A+4fcP8A/gHb4RQeejPBQ28mKNvu8HAK
+        D72Z4KE3E5Rtx4dfX3+PcI+i/fvPlxGd7+X97wj3aS74QCUT7lG0p5KJzkclE+7TXPCBSibco2hPJROd
+        j0om3Ke54AOVTLhH0Z5KJjoflUy4T3PBByqZcI+iPZVMdD4qmXCf5oIPVDLhHkV7KpnofFQy4T7NBR+o
+        ZMI9ivZUMtH5qGTCfZoLPlDJhHsU7alkovNRyYT7NBd8oJIJ9yjaU8lE56OSCfdpLvhAJRPuUbSnkonO
+        RyUT7tNc8IFKJtyjaE8lE52PSibcp7ngA5VMuEfRnkomOh+VTLhPc3F4OIWH3kzw0JsJyrY7PJzCQ28m
+        eOjNBGXbfT5cJfcPuH/A/QP4B2yHU3jozQQPvZmgbLvDwyk89GaCh95MULYdH56/vI5wj7J8r99GdL7X
+        5+8j3Ke54AOVTLhHWT4omeh8VDLhPs0FH6hkwj3K8kHJROejkgn3aS74QCUT7lGWD0omOh+VTLhPc8EH
+        Kplwj7J8UDLR+ahkwn2aCz5QyYR7lOWDkonORyUT7tNc8IFKJtyjLB+UTHQ+Kplwn+aCD1Qy4R5l+aBk
+        ovNRyYT7NBd8oJIJ9yjLByUTnY9KJtynueADlUy4R1k+KJnofFQy4T7NBR+oZMI9yvJByUTno5IJ92ku
+        +EAlE+5Rlg9KJjoflUy4T3NxeDiFh95M8NCbCcq2OzycwkNvJnjozQRl230+XCX3D/AfcGFweRGePv4B
+        ugKS3BUuS0cAAAAASUVORK5CYII=
 </value>
   </data>
   <metadata name="$this.FormFactorShadowProperty" xml:space="preserve">

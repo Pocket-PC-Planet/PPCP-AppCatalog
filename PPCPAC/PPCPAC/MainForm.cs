@@ -140,5 +140,11 @@ namespace PPCPAC
                 new RegStoreClass().sValue = "^$";
             }
         }
+
+        private void searchMenuBtn_Click(object sender, EventArgs e)
+        {
+            //search
+            tabControl.SelectedIndex = 1;
+        }
     }
 }
