@@ -37,13 +37,23 @@ namespace PPCPAC
         private void homeBtn_Click(object sender, EventArgs e)
         {
             //go home
-            tabControl.SelectedIndex = 0;
-            homeBtn.Text = "Home";
+            switch (homeBtn.Text)
+            {
+                case "Home":
+                    tabControl.SelectedIndex = 0;
+                    break;
 
-            //remember screenshots setting
-            string value = new RegStoreClass().sValue;
+                case "Refresh":
+                    //remember screenshots setting
+                    string value = new RegStoreClass().sValue;
 
-            browser.Navigate(new Uri("http://appmanager.ppcplanet.org/posts.php?q=^^^" + value));
+                    browser.Navigate(new Uri("http://appmanager.ppcplanet.org/posts.php?q=^^^" + value));
+                    break;
+
+                case "Back":
+                    browser.GoBack();
+                    break;
+            }
         }
 
         private void searchBtn_Click(object sender, EventArgs e)
@@ -60,8 +70,6 @@ namespace PPCPAC
                 //get screenshot string
                 string screenshots = new RegStoreClass().sValue;
 
-                //get screenshot preference
-
                 //get query
                 if (searchTxt.Text.Trim() != "")
                 {
@@ -72,21 +80,15 @@ namespace PPCPAC
                 switch (categoryBox.SelectedIndex)
                 {
                     case 1:
-                        {
-                            category = "app";
-                        }
+                        category = "app";
                         break;
 
                     case 2:
-                        {
-                            category = "game";
-                        }
+                        category = "game";
                         break;
 
                     case 3:
-                        {
-                            category = "driver";
-                        }
+                        category = "driver";
                         break;
                 }
 
@@ -104,13 +106,35 @@ namespace PPCPAC
             //show/hide browser control depending on selected tab. if browser control's parent is the tab control, links don't work.
             if (tabControl.SelectedIndex == 0)
             {
+                //show browser if user is on catalog tab
                 browser.Show();
                 browser.BringToFront();
+
+                //update homeBtn text if viewing catalog
+                if (homeBtn.Text != "End Search")
+                {
+                    //if not viewing catalog page, change button text to "Back"
+                    if (browser.Url.AbsoluteUri.IndexOf("http://appmanager.ppcplanet.org/posts.php?q=") == -1)
+                    {
+                        homeBtn.Text = "Back";
+                    }
+                    else
+                    {
+                        homeBtn.Text = "Refresh";
+                    }
+                }
             }
             else
             {
+                //hide browser if user is not on catalog tab
                 browser.Hide();
                 browser.SendToBack();
+
+                //update homeBtn text if not viewing catalog
+                if (homeBtn.Text != "End Search")
+                {
+                    homeBtn.Text = "Home";
+                }
             }
         }
 
@@ -145,6 +169,19 @@ namespace PPCPAC
         {
             //search
             tabControl.SelectedIndex = 1;
+        }
+
+        private void browser_Navigated(object sender, WebBrowserNavigatedEventArgs e)
+        {
+            //depending on URL, show either home or refresh
+            if (e.Url.AbsoluteUri.IndexOf("http://appmanager.ppcplanet.org/posts.php?q=") == -1)
+            {
+                homeBtn.Text = "Back";
+            }
+            else
+            {
+                homeBtn.Text = "Refresh";
+            }
         }
     }
 }

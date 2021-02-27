@@ -34,11 +34,10 @@
             this.homeBtn = new System.Windows.Forms.MenuItem();
             this.menuBtn = new System.Windows.Forms.MenuItem();
             this.scToggle = new System.Windows.Forms.MenuItem();
-            this.infoBtn = new System.Windows.Forms.MenuItem();
             this.exitBtn = new System.Windows.Forms.MenuItem();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.catalogPage = new System.Windows.Forms.TabPage();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.mainPanel = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.searchTab = new System.Windows.Forms.TabPage();
@@ -51,7 +50,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Info = new System.Windows.Forms.TabPage();
             this.label9 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -60,10 +58,9 @@
             this.browser = new System.Windows.Forms.WebBrowser();
             this.label10 = new System.Windows.Forms.Label();
             this.closeBtn = new System.Windows.Forms.Button();
-            this.searchMenuBtn = new System.Windows.Forms.MenuItem();
             this.tabControl.SuspendLayout();
             this.catalogPage.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.mainPanel.SuspendLayout();
             this.searchTab.SuspendLayout();
             this.panel1.SuspendLayout();
             this.Info.SuspendLayout();
@@ -77,27 +74,20 @@
             // 
             // homeBtn
             // 
-            this.homeBtn.Text = "Home";
+            this.homeBtn.Text = "Refresh";
             this.homeBtn.Click += new System.EventHandler(this.homeBtn_Click);
             // 
             // menuBtn
             // 
             this.menuBtn.MenuItems.Add(this.scToggle);
-            this.menuBtn.MenuItems.Add(this.searchMenuBtn);
-            this.menuBtn.MenuItems.Add(this.infoBtn);
             this.menuBtn.MenuItems.Add(this.exitBtn);
-            this.menuBtn.Text = "App";
+            this.menuBtn.Text = "Menu";
             // 
             // scToggle
             // 
             this.scToggle.Checked = true;
             this.scToggle.Text = "Hide Screenshots";
             this.scToggle.Click += new System.EventHandler(this.scToggle_Click);
-            // 
-            // infoBtn
-            // 
-            this.infoBtn.Text = "Info";
-            this.infoBtn.Click += new System.EventHandler(this.infoBtn_Click);
             // 
             // exitBtn
             // 
@@ -106,6 +96,9 @@
             // 
             // tabControl
             // 
+            this.tabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl.Controls.Add(this.catalogPage);
             this.tabControl.Controls.Add(this.searchTab);
             this.tabControl.Controls.Add(this.Info);
@@ -120,20 +113,20 @@
             // catalogPage
             // 
             this.catalogPage.BackColor = System.Drawing.Color.Black;
-            this.catalogPage.Controls.Add(this.panel3);
+            this.catalogPage.Controls.Add(this.mainPanel);
             this.catalogPage.Controls.Add(this.label6);
             this.catalogPage.Location = new System.Drawing.Point(0, 0);
             this.catalogPage.Name = "catalogPage";
             this.catalogPage.Size = new System.Drawing.Size(240, 271);
             this.catalogPage.Text = "Catalog";
             // 
-            // panel3
+            // mainPanel
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(212)))), ((int)(((byte)(78)))));
-            this.panel3.Controls.Add(this.label11);
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(240, 29);
+            this.mainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(212)))), ((int)(((byte)(78)))));
+            this.mainPanel.Controls.Add(this.label11);
+            this.mainPanel.Location = new System.Drawing.Point(0, 0);
+            this.mainPanel.Name = "mainPanel";
+            this.mainPanel.Size = new System.Drawing.Size(240, 29);
             // 
             // label11
             // 
@@ -235,7 +228,6 @@
             // 
             this.Info.BackColor = System.Drawing.Color.Black;
             this.Info.Controls.Add(this.label9);
-            this.Info.Controls.Add(this.label5);
             this.Info.Controls.Add(this.label8);
             this.Info.Controls.Add(this.label7);
             this.Info.Controls.Add(this.pictureBox1);
@@ -247,18 +239,12 @@
             // 
             // label9
             // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(7, 205);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(233, 62);
-            this.label9.Text = "Version 1.0.0\r\ngithub.com/pocket-pc-planet\r\nppcplanet.org";
-            // 
-            // label5
-            // 
-            this.label5.Location = new System.Drawing.Point(44, 139);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 20);
-            this.label5.Text = "label5";
+            this.label9.Text = "Version 1.1.0\r\ngithub.com/pocket-pc-planet\r\nppcplanet.org";
             // 
             // label8
             // 
@@ -283,6 +269,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(7, 35);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             // 
             // panel2
             // 
@@ -302,11 +289,15 @@
             // 
             // browser
             // 
+            this.browser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.browser.Location = new System.Drawing.Point(0, 28);
             this.browser.Name = "browser";
             this.browser.ScriptErrorsSuppressed = true;
             this.browser.Size = new System.Drawing.Size(240, 242);
             this.browser.Visible = false;
+            this.browser.Navigated += new System.Windows.Forms.WebBrowserNavigatedEventHandler(this.browser_Navigated);
             // 
             // label10
             // 
@@ -326,11 +317,6 @@
             this.closeBtn.Text = "Exit";
             this.closeBtn.Click += new System.EventHandler(this.exitBtn_Click);
             // 
-            // searchMenuBtn
-            // 
-            this.searchMenuBtn.Text = "Search";
-            this.searchMenuBtn.Click += new System.EventHandler(this.searchMenuBtn_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -349,7 +335,7 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.tabControl.ResumeLayout(false);
             this.catalogPage.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
+            this.mainPanel.ResumeLayout(false);
             this.searchTab.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.Info.ResumeLayout(false);
@@ -363,7 +349,6 @@
         private System.Windows.Forms.MenuItem homeBtn;
         private System.Windows.Forms.MenuItem menuBtn;
         private System.Windows.Forms.MenuItem scToggle;
-        private System.Windows.Forms.MenuItem infoBtn;
         private System.Windows.Forms.TabControl tabControl;
         private System.Windows.Forms.TabPage catalogPage;
         private System.Windows.Forms.TabPage searchTab;
@@ -383,13 +368,11 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel mainPanel;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button closeBtn;
-        private System.Windows.Forms.MenuItem searchMenuBtn;
     }
 }
 
