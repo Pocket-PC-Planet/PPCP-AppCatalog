@@ -1,7 +1,7 @@
-# PPCP-AppCatalog (PPCP-AppManager)
+# Pocket PC Planet App Catalog
 ![Catalog Logo](icon.png)
 
-A lite alternative to the PPCP-AppManager program designed for older, less powerful devices. With PPCPAC, you can easily download and install Windows Mobile apps, right on your Pocket PC!
+Easily find, download, and install Windows Mobile software, no computer required! The Pocket PC Planet App Catalog fetches items from Pocket PC Planet's software archive and displays them in a list optimized for Pocket PCs. PPCPAC is open source, and you can find the server-side portion of the code [here](https://github.com/pocket-pc-planet/surfers-side).
 
 ### Screenshot
 ![Catalog](Screenshots/catalog.PNG)
@@ -13,5 +13,5 @@ A lite alternative to the PPCP-AppManager program designed for older, less power
 - [Discord Server](https://discord.gg/tHbx4qc)
 - [PPC Planet](https://ppcplanet.org/)
 
-
-![Project Banner](https://i.imgur.com/jgTiswg.png)
+### Important
+This program has replaced the old Pocket PC Planet App Manager project completely as of March 3, 2021. We're going to work on adding some of the App Manager's best features to the App Catalog in the future.
