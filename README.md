@@ -7,8 +7,7 @@ Easily find, download, and install Windows Mobile software, no computer required
 ![Catalog](Screenshots/catalog.PNG)
 
 ### Resources
-- [PPCP-AppManager Website](http://appmanager.ppcplanet.org/)
-- [Development Blog](https://ppcpappmanagedevblog.blogspot.com/)
+- [Server-Side Code](https://github.com/pocket-pc-planet/surfers-side)
 - [Forum Discussion](https://ppcplanet.org/forums/discussion/12/dev-project-modern-ppc-app-market)
 - [Discord Server](https://discord.gg/tHbx4qc)
 - [PPC Planet](https://ppcplanet.org/)
