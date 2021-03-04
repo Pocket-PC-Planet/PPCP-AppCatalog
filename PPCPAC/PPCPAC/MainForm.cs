@@ -31,7 +31,7 @@ namespace PPCPAC
             }
 
             //load posts.php page
-            browser.Navigate(new Uri("http://appmanager.ppcplanet.org/posts.php?q=^^^" + value));
+            browser.Navigate(new Uri("http://appcatalog.ppcplanet.org/posts.php?q=^^^" + value));
         }
 
         private void homeBtn_Click(object sender, EventArgs e)
@@ -47,7 +47,7 @@ namespace PPCPAC
                     //remember screenshots setting
                     string value = new RegStoreClass().sValue;
 
-                    browser.Navigate(new Uri("http://appmanager.ppcplanet.org/posts.php?q=^^^" + value));
+                    browser.Navigate(new Uri("http://appcatalog.ppcplanet.org/posts.php?q=^^^" + value));
                     break;
 
                 case "Back":
@@ -93,7 +93,7 @@ namespace PPCPAC
                 }
 
                 //search
-                browser.Navigate(new Uri("http://appmanager.ppcplanet.org/posts.php?q=" + query + "^^" + category + screenshots));
+                browser.Navigate(new Uri("http://appcatalog.ppcplanet.org/posts.php?q=" + query + "^^" + category + screenshots));
             }
             else
             {
@@ -114,7 +114,7 @@ namespace PPCPAC
                 if (homeBtn.Text != "End Search")
                 {
                     //if not viewing catalog page, change button text to "Back"
-                    if (browser.Url.AbsoluteUri.IndexOf("http://appmanager.ppcplanet.org/posts.php?q=") == -1)
+                    if (browser.Url.AbsoluteUri.IndexOf("http://appcatalog.ppcplanet.org/posts.php?q=") == -1)
                     {
                         homeBtn.Text = "Back";
                     }
@@ -174,7 +174,7 @@ namespace PPCPAC
         private void browser_Navigated(object sender, WebBrowserNavigatedEventArgs e)
         {
             //depending on URL, show either home or refresh
-            if (e.Url.AbsoluteUri.IndexOf("http://appmanager.ppcplanet.org/posts.php?q=") == -1)
+            if (e.Url.AbsoluteUri.IndexOf("http://appcatalog.ppcplanet.org/posts.php?q=") == -1)
             {
                 homeBtn.Text = "Back";
             }
