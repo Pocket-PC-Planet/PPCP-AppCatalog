@@ -6,6 +6,7 @@ Easily find, download, and install Windows Mobile software, no computer required
 ### Screenshots
 ![Catalog](Screenshots/catalog.PNG)
 ![Search Page](Screenshots/search.PNG)
+![Info Page](Screenshots/info.PNG)
 
 ### Resources
 - [Server-Side Code](https://github.com/pocket-pc-planet/surfers-side)
