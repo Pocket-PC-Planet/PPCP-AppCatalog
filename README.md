@@ -3,8 +3,9 @@
 
 Easily find, download, and install Windows Mobile software, no computer required! The Pocket PC Planet App Catalog fetches items from Pocket PC Planet's software archive and displays them in a list optimized for Pocket PCs. PPCPAC is open source, and you can find the server-side portion of the code [here](https://github.com/pocket-pc-planet/surfers-side).
 
-### Screenshot
+### Screenshots
 ![Catalog](Screenshots/catalog.PNG)
+![Search Page](Screenshots/search.PNG)
 
 ### Resources
 - [Server-Side Code](https://github.com/pocket-pc-planet/surfers-side)
