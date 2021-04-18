@@ -155,7 +155,7 @@
             this.searchTab.Controls.Add(this.panel1);
             this.searchTab.Location = new System.Drawing.Point(0, 0);
             this.searchTab.Name = "searchTab";
-            this.searchTab.Size = new System.Drawing.Size(232, 268);
+            this.searchTab.Size = new System.Drawing.Size(240, 271);
             this.searchTab.Text = "Search";
             // 
             // searchBtn
@@ -244,7 +244,7 @@
             this.label9.Location = new System.Drawing.Point(7, 205);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(233, 62);
-            this.label9.Text = "Version 1.1.1\r\ngithub.com/pocket-pc-planet\r\nppcplanet.org";
+            this.label9.Text = "Version 1.1.2\r\ngithub.com/pocket-pc-planet\r\nppcplanet.org";
             // 
             // label8
             // 
