@@ -10,7 +10,7 @@ Easily find, download, and install Windows Mobile software, no computer required
 
 ### Resources
 - [Server-Side Code](https://github.com/pocket-pc-planet/surfers-side)
-- [Discord Server](https://discord.gg/tHbx4qc)
+- [Discord Server](https://discord.gg/7P9MguNXDV)
 - [PPC Planet](https://ppcplanet.org/)
 
 ### Important
